@@ -64,7 +64,6 @@ Configure DMA in **continuous mode** to transfer data from `sData` to `rData` in
 - DMA Ch1 ISR alternates between 3 destination buffers using `dmaCh1IntCount`
 - Graph view in Code Composer Studio shows expected stepped waveform in `rData[]`
 
----
 ### Group10_FFT – Fixed-Point FFT on TMS320F2837xD
 
 This project implements a **fixed-point Cooley-Tukey FFT** algorithm on the TI **TMS320F2837xD** MCU to analyze a composite signal of 200 Hz and 600 Hz.
