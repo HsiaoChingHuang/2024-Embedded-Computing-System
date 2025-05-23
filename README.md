@@ -108,7 +108,7 @@ Perform a 1024-point FFT on a composite signal (200 Hz + 600 Hz), using **Q17.15
 
 ## References
 
-- [exas Instuments, "TMS320C28x Extended Instruction Sets - Technical Reference Manual," 2019.](https://www.ti.com/lit/ug/spruhs1c)
+- [Texas Instuments, "TMS320C28x Extended Instruction Sets - Technical Reference Manual," 2019.](https://www.ti.com/lit/ug/spruhs1c)
 - [Texas Instruments, "TMS320F2837xD Dual-Core Real-Time Microcontrollers Technical Reference Manual," 2024.](https://www.ti.com/lit/ug/spruhm8k)
 - [M. Bhardwaj, "Digital Control of Two Phase Interleaved PFC and Motor Drive Using MCU With CLA," 2013.](https://www.ti.com/lit/an/sprabs5)
 - [Massachusetts Institute of Technology, Department of Electrical Engineering and Computer Science, "Lecture 20 The Goertzel Algorithm and the Chirp Transform," 2006.](https://ocw.mit.edu/courses/6-341-discrete-time-signal-processing-fall-2005/c5b65e06d8d1221fa68b23b7f0d23b41_lec20.pdf)
