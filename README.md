@@ -1,54 +1,42 @@
 # Embedded Systems Coursework(Group 12) & Digital Signal Processing (Group 10)
 
-This repository contains embedded system tasks developed using the **TI TMS320F2837xD** MCU as part of ECS and DSP courseworks. It demonstrates skills in GPIO handling, timers, DMA, IPC communication, digital signal processing, and real-time applications. The primary objective of this coursework is to develop a comprehensive understanding of embedded systems, particularly in the areas of real-time DSP processing, FIR filtering, inter-processor communication, and peripheral control. The seven tasks covered in this coursework span a variety of embedded computing techniques, from microcontroller programming to real-time signal processing and data transfer using DMA.
+This repository contains embedded system tasks developed using the TI TMS320F2837xD MCU as part of ECS and DSP courseworks. It demonstrates skills in GPIO handling, timers, DMA, IPC communication, fixed-point FFT implementation, digital signal processing, and real-time applications. The primary objective of these coursework is to develop a comprehensive understanding of embedded systems, particularly in the areas of real-time DSP processing, FIR filtering, FFT analysis, inter-processor communication, and peripheral control.
+
+## ECS CW
 
 ### Task 1 – Integer and Floating-Point Multiplication
 - Multiply signed and unsigned integers.
 - Display results using `printf`.
 - Adjusted linker file to increase heap for floating-point accuracy.
 
----
-
 ### Task 2 – FIR Filter Implementation
 - FIR filter implemented using convolution.
 - Uses circular buffer for real-time signal processing.
 - Output verified against expected waveform.
-
----
 
 ### Task 3 – Goertzel Algorithm
 - Detects signal frequency components.
 - Uses iterative form of Goertzel’s difference equations.
 - Heap and `.cio` configured via linker command file.
 
----
-
 ### Task 4 – IPC Communication (CPU1 to CPU2)
 - Transfers array using shared RAM.
 - Communicates array size and base address through IPC.
 - Handled via `IpcRegs` and shared section: `SHARERAMGS0`.
-
----
 
 ### Task 5 – DMA Data Transfer
 - Array-to-array data transfer via DMA Channel
 - Uses RAMGS0 and RAMGS1 regions.
 - Configured with PERINTFRC to simulate periodic DMA trigger.
 
----
-
 ### Task 6 Question 5 – Button Interrupt with Debounce
 - GPIO32 = Button (input with pull-up)
 - GPIO31 = LED (output)
 - Debouncing using `GPIO_setQualificationMode()` (3/6 sample)
 
----
-
 ### Task 6 Question 6 – 1kHz Square Wave Generation
 - GPIO31 toggled every 0.5ms using CPU Timer.
 - Frequency too high to observe on LED, stored output in array for inspection.
-
----
 
 ### Task 6 Question 7 – Real-Time Clock
 - 200MHz CPU using 1ms Timer0 interrupt.
@@ -56,6 +44,7 @@ This repository contains embedded system tasks developed using the **TI TMS320F2
 - Debugging via GPIO65 toggle output.
 
 ---
+## DSP CW
 
 ### Group10_DMA – Ping-Pong DMA on TMS320F2837xD
 
@@ -94,7 +83,7 @@ Perform a 1024-point FFT on a composite signal (200 Hz + 600 Hz), using **Q17.15
 - Recursive FFT function with twiddle factor calculations
 - Frequency domain magnitude calculated as √(real² + imag²)
 
-## Challenges
+#### Challenges
 
 - Managing fixed-point scaling to avoid overflow
 - Manual memory allocation (`malloc`) and `free()`
@@ -108,8 +97,6 @@ Perform a 1024-point FFT on a composite signal (200 Hz + 600 Hz), using **Q17.15
 - **IDE**: Code Composer Studio (CCS)
 - **Language**: C
 - **Drivers**: C2000 Peripheral Driver Library
-
----
 
 ## How to Build & Run
 
