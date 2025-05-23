@@ -126,7 +126,7 @@ Perform a 1024-point FFT on a composite signal (200 Hz + 600 Hz), using **Q17.15
 - [F2837xD Architecture](https://www.ti.com/lit/ug/spruhm8k)
 - [CLA White Paper](https://www.ti.com/lit/an/sprabs5)
 - [MIT DSP Lecture](https://ocw.mit.edu/courses/6-341-discrete-time-signal-processing-fall-2005/c5b65e06d8d1221fa68b23b7f0d23b41_lec20.pdf)
-- [Applied Digital Signal Processing – Manolakis & Ingle, Cambridge University Press, 2011]
+- Applied Digital Signal Processing – Manolakis & Ingle, Cambridge University Press, 2011
 
 ---
 
