@@ -2,7 +2,7 @@
 
 This repository contains embedded system tasks developed using the TI TMS320F2837xD MCU as part of ECS and DSP courseworks. It demonstrates skills in GPIO handling, timers, DMA, IPC communication, fixed-point FFT implementation, digital signal processing, and real-time applications. The primary objective of these coursework is to develop a comprehensive understanding of embedded systems, particularly in the areas of real-time DSP processing, FIR filtering, FFT analysis, inter-processor communication, and peripheral control.
 
-## ECS CW
+## ECS Coursework
 
 ### Task 1 – Integer and Floating-Point Multiplication
 - Multiply signed and unsigned integers.
@@ -32,7 +32,7 @@ This repository contains embedded system tasks developed using the TI TMS320F283
 ### Task 6 Question 5 – Button Interrupt with Debounce
 - GPIO32 = Button (input with pull-up)
 - GPIO31 = LED (output)
-- Debouncing using `GPIO_setQualificationMode()` (3/6 sample)
+- Debouncing using `GPIO_setQualificationMode()`
 
 ### Task 6 Question 6 – 1kHz Square Wave Generation
 - GPIO31 toggled every 0.5ms using CPU Timer.
@@ -44,7 +44,7 @@ This repository contains embedded system tasks developed using the TI TMS320F283
 - Debugging via GPIO65 toggle output.
 
 ---
-## DSP CW
+## DSP Coursework
 
 ### Group10_DMA – Ping-Pong DMA on TMS320F2837xD
 
